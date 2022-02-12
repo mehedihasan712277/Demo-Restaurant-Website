@@ -1,0 +1,1521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../image/spaghetti-ge11eadaea_1280.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* ===============homepage================= */
+#home {
+    padding-bottom: 20vh;
+}
+
+/* ------------navgation bar design-------------- */
+.navContainer {
+    width: 100%;
+}
+
+.navbar {
+    width: 90%;
+    height: 100px;
+    /* background-color: black; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(241, 90, 115);
+    font-size: 40px;
+    font-family: Josefin sans;
+}
+
+/* .menubarContainer{
+    display: none;
+} */
+.menubar:hover {
+    cursor: pointer;
+}
+
+.menubar img {
+    width: 30px;
+    height: 30px;
+}
+
+.menuContainer {
+    display: block;
+    width: 500px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+
+    text-align: center;
+    transition: .3s;
+}
+
+.menu li a:hover {
+    color: rgb(255, 126, 148);
+}
+
+/* hidden link */
+.linkContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    transition: .3s;
+}
+
+.link {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    user-select: none;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(201, 201, 201);
+    transition: .3s;
+}
+
+.link a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.cross {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 10px;
+    color: rgb(194, 194, 194);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cross:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* --------------homepage intro design------------------ */
+.name {
+    margin-top: 120px;
+    font-size: 110px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subname {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+}
+
+.gsbtn {
+    text-align: center;
+    width: 200px;
+    line-height: 50px;
+    margin: 60px auto 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: .3s ease-in;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gsbtn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/* ==============about page================== */
+#about {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.headline {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(48, 45, 61);
+    font-size: 30px;
+    width: 90%;
+    margin: 0 auto 30px;
+}
+
+.descripton, .lastDescription {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+    color: rgb(48, 48, 71);
+    text-align: justify;
+
+}
+
+.lastDescription {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 2px solid rgb(179, 179, 184);
+    padding-top: 15px;
+}
+
+.pikContainer {
+    padding: 30px 0;
+    border-top: 2px solid rgb(179, 179, 184);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 6px;
+    width: 90%;
+    margin: 40px auto 0;
+}
+
+.pikCon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6px;
+}
+
+.pik1, .pik2, .pik3 {
+    height: 280px;
+    background-color: #192a52;
+    color: white;
+    text-align: center;
+}
+
+.pik1 img, .pik2 img, .pik3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.iconContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-gap:5px; */
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.part {
+    text-align: center;
+}
+
+.part img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.iconDescription {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/* ==================recipe page=============== */
+#recipe {
+    background-color: rgba(242, 242, 242);
+    padding: 10vh 0;
+}
+
+.headline1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #192a52;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.subText {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    width: 80%;
+    margin: 15px auto 0;
+}
+
+/* slide  */
+.splide {
+    background-color: #192a56;
+    background-color: white;
+    height: 500px;
+    width: 90%;
+    margin: 50px auto 0;
+    padding: 50px;
+    position: relative;
+}
+
+.highlighter {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.extra {
+    width: 90%;
+    height: 5px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.splide__slide {
+    height: 400px;
+    margin: 0 auto;
+}
+
+.recipeContainer {
+    width: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.recipePik, .recipeDescription {
+    height: 400px;
+}
+
+.recipeDescription {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.recDesHeadline {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #192a52;
+    border-bottom: 2px solid #192a52;
+    margin-bottom: 10px;
+}
+
+.recDesText {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    /* text-align: justify; */
+    color: #192a52;
+}
+
+.ingrediants {
+    list-style: disc;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.ingrediants li {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 17px;
+    color: #192a52;
+}
+
+.rp {
+    height: 100%;
+    width: 100%;
+}
+
+/* =====================order page===================== */
+#order {
+    padding: 10vh 0;
+    /* height: 100vh; */
+    background-color: white;
+}
+
+.headline2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: #101c38;
+}
+
+.subHeadline {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #101c38;
+    font-weight: 300;
+}
+
+.orderTxt {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #101c38;
+    text-align: center;
+    width: 70%;
+    margin: 20px auto 40px;
+}
+
+.orderBtn {
+    background-color: #101c38;
+    margin: 15px auto 0;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    width: 250px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+    border: 4px solid #101c38;
+    box-sizing: border-box;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in;
+    cursor: pointer;
+    user-select: none;
+}
+
+.orderBtn:hover {
+    background-color: transparent;
+    color: #101c38;
+
+}
+
+/* ========================offer page================= */
+#offer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 10vh 0 15vh;
+}
+
+#swiper-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#box {
+    background-color: #fff;
+    position: relative;
+    height: 420px;
+    width: 300px;
+    margin: 0 25px;
+    border-radius: 5px;
+}
+
+.commision {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.commision img {
+    height: 70px;
+    width: 70px;
+}
+
+.offerImage {
+    width: 300px;
+    height: 300px;
+}
+
+.foodName {
+    color: #101c38;
+    color: rgb(241, 64, 93);
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.orderBtn1 {
+    background-color: rgb(250, 91, 117);
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    width: 180px;
+    margin: 10px auto 0;
+    border-radius: 20px;
+    border: 2px solid rgb(250, 91, 117);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.orderBtn1:hover {
+    background-color: transparent;
+    color: rgb(250, 91, 117);
+    font-weight: 700;
+}
+
+.spOfferTxt {
+    color: white;
+    font-family: Roboto;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.con {
+    display: none;
+    width: 100%;
+}
+
+/* ------------------------ */
+.swiper {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.swiper-slide {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* =================conntact page============ */
+#contact {
+    padding: 15vh 0;
+    background-color: white;
+}
+
+.contactHeadline {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(117, 155, 224);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.contactTxt {
+    text-align: center;
+    color: #101c38;
+    font-size: 20px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Didact Gothic', sans-serif;
+
+}
+
+.contactBoxWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin: 50px auto 0;
+}
+
+.details {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+
+.detailsWrapper {
+    opacity: 1;
+    /* background-color: green; */
+}
+
+.address, .phone, .email {
+    display: flex;
+    margin: 10px 0;
+}
+
+.txt {
+    margin-left: 10px;
+}
+
+.img img {
+    height: 30px;
+    width: 30px;
+}
+
+.cHead {
+    color: rgb(117, 155, 224);
+    font-size: 23px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.cTxt {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.massage {
+    /* background-color: #eee; */
+    display: flex;
+    justify-content: end;
+}
+
+.massageWrapper {
+    background-color: #eee;
+    /* background-color: yellow; */
+    padding: 50px 50px;
+}
+
+.mHead {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+    color: #101c38;
+    font-size: 20px;
+}
+
+input {
+    background-color: #eee;
+    display: block;
+    margin: 10px 0;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    /* padding-left: 10px; */
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 2px;
+}
+
+input::placeholder {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #101c38;
+    /* font-weight: bold; */
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+    background-color: #fff;
+    border-bottom: 0;
+}
+
+.send {
+    background-color: rgb(117, 155, 224);
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.send:hover {
+    opacity: .7;
+}
+
+/* =============footer=============== */
+#footer {
+    background-color: #101c38;
+    padding: 70px 0;
+}
+
+.ficonCon {
+    display: flex;
+}
+
+.ficon {
+    color: white;
+    margin: 0 auto;
+}
+
+.ficon i {
+    margin: 0 2px;
+}
+
+.ficon i:hover {
+    cursor: pointer;
+}
+
+.footerTxt {
+    text-align: center;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footerTxt1 {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+/* ============================================== */
+/* responsive web design */
+/* -----------homapage-------------------- */
+@media only screen and (min-width: 1441px) {
+    .name {
+        font-size: 150px;
+    }
+
+    .subname {
+        font-size: 55px;
+    }
+
+    #home {
+        padding-bottom: 30vh;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    .pik1, .pik2, .pik3 {
+        height: 250px;
+    }
+
+    .part img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .iconDescription {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .contactBoxWrapper {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    #box {
+        margin: 0 5px;
+        height: 380px;
+        width: 280px;
+    }
+
+    .offerImage {
+        height: 280px;
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .name {
+        font-size: 90px;
+    }
+
+    .subname {
+        font-size: 30px;
+    }
+
+    .pikContainer {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .pikCon {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .pik3 {
+        height: 300px;
+    }
+
+    .pik1, .pik2 {
+        height: 147px;
+    }
+
+    .splide {
+        height: 450px;
+    }
+
+    .splide__slide {
+        height: 350px;
+    }
+
+    .recipePik, .recipeDescription {
+        height: 350px;
+    }
+
+    .contactBoxWrapper {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .menuContainer {
+        width: 450px;
+    }
+
+    .iconContainer {
+        padding: 10px 0px;
+    }
+
+    .headline {
+        font-size: 25px;
+    }
+
+    .descripton, .lastDescription {
+        font-size: 16px;
+    }
+
+    #box {
+        height: 350px;
+        width: 250px;
+    }
+
+    .offerImage {
+        height: 250px;
+        width: 250px;
+    }
+
+    .contactBoxWrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .menuContainer {
+        width: 400px;
+    }
+
+    .menu li a {
+        font-size: 17px;
+    }
+
+    #box {
+        height: 300px;
+        width: 200px;
+    }
+
+    .offerImage {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .name {
+        font-size: 70px;
+    }
+
+    .subname {
+        font-size: 25px;
+    }
+
+    .menuContainer {
+        display: none;
+    }
+
+    .subText {
+        width: 90%;
+    }
+
+    /* .menubarContainer{
+        display: block;
+    } */
+    .iconContainer {
+        width: 90%;
+        padding: 10px 60px;
+    }
+
+    .splide {
+        height: 400px;
+    }
+
+    .splide__slide {
+        height: 300px;
+    }
+
+    .recipePik, .recipeDescription {
+        height: 300px;
+    }
+
+    .recDesHeadline {
+        font-size: 16px;
+    }
+
+    .recDesText {
+        font-size: 14px;
+    }
+
+    .ingrediants li {
+        font-size: 14px;
+    }
+
+    .contactBoxWrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .menubarContainer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #about {
+        padding: 60px 0;
+    }
+
+    .splide {
+        height: 350px;
+    }
+
+    .splide__slide {
+        height: 250px;
+    }
+
+    .recipePik, .recipeDescription {
+        height: 250px;
+    }
+
+    .recDesHeadline {
+        font-size: 14px;
+    }
+
+    .recDesText {
+        font-size: 12px;
+    }
+
+    .ingrediants li {
+        font-size: 12px;
+    }
+
+    .headline2 {
+        font-size: 30px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .subHeadline {
+        font-size: 15px;
+    }
+
+    .orderTxt {
+        font-size: 15px;
+    }
+
+    .orderBtn {
+        font-size: 25px;
+        line-height: 40px;
+        width: 200px;
+    }
+
+    #swiper-wrapper {
+        display: none;
+    }
+
+    .con {
+        display: block;
+    }
+
+    #box {
+        width: inherit;
+        height: inherit;
+    }
+
+    .offerImage {
+        height: 380px;
+        width: 500px;
+    }
+
+    .contactHeadline {
+        font-size: 30px;
+    }
+
+    .contactTxt {
+        font-size: 18px;
+    }
+
+    .cHead {
+        font-size: 20px;
+    }
+
+    .cTxt {
+        font-size: 15px;
+    }
+
+    .mHead {
+        font-size: 17px;
+    }
+
+    .massageWrapper {
+        padding: 25px 25px;
+    }
+
+    input {
+        height: 27px;
+    }
+
+    input::placeholder {
+        font-size: 15px;
+    }
+
+    .send {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .name {
+        font-size: 55px;
+    }
+
+    .subname {
+        font-size: 25px;
+        letter-spacing: normal;
+    }
+
+    .gsbtn {
+        line-height: 35px;
+        font-size: 18px;
+    }
+
+    .cHead {
+        font: 17px;
+    }
+
+    .cTxt {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #offer {
+        background-image: linear-gradient(rgb(238, 238, 238), rgb(238, 238, 238));
+    }
+
+    .spOfferTxt {
+        color: #101c38;
+    }
+
+    .contactBoxWrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contactHeadline {
+        font-size: 25px;
+    }
+
+    .contactTxt {
+        font-size: 16px;
+    }
+
+    .details {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .detailsWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cTxt {
+        display: none;
+    }
+
+    .massage {
+        justify-content: center;
+    }
+
+    .massageWrapper {
+        padding: 50px 50px;
+    }
+
+    .mHead {
+        text-align: center;
+        font-size: 23px;
+        letter-spacing: 2px;
+    }
+
+    input {
+        height: 35px;
+        width: 300px;
+    }
+
+    .send {
+        margin: 0 auto;
+        width: 100px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .iconContainer {
+        padding: 10px 40px;
+    }
+
+    .splide {
+        width: 95%;
+    }
+
+    .extra {
+        width: 95%;
+    }
+
+    .headline1 {
+        font-size: 25px;
+    }
+
+    .subText {
+        font-size: 18px;
+    }
+
+    .swiper {
+        width: 450px;
+        height: 470px;
+    }
+
+    .offerImage {
+        height: 350px;
+        width: 450px;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    .footerTxt {
+        font-size: 20px;
+    }
+
+    .footerTxt1 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .name {
+        margin-top: 70px;
+    }
+
+    .headline {
+        font-size: 20px;
+    }
+
+    .descripton, .lastDescription {
+        font-size: 14px;
+    }
+
+    .pik3 {
+        height: 260px;
+    }
+
+    .pik1, .pik2 {
+        height: 127px;
+    }
+
+    .part img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .iconContainer {
+        padding: 10px 20px;
+    }
+
+    .iconDescription {
+        font-size: 13px;
+    }
+
+    .splide {
+        width: 100%;
+    }
+
+    .extra {
+        width: 100%;
+    }
+
+    .swiper {
+        width: 350px;
+        height: 370px;
+    }
+
+    .offerImage {
+        width: 350px;
+        height: 250px;
+    }
+
+    .headline2 {
+        font-size: 20px;
+    }
+
+    .subHeadline {
+        font-size: 13px;
+    }
+
+    .orderTxt {
+        font-size: 13px;
+    }
+
+    .orderBtn {
+        line-height: 30px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .name {
+        font-size: 45px;
+        margin-top: 90px;
+    }
+
+    .pik3 {
+        height: 250px;
+    }
+
+    .pik1, .pik2 {
+        height: 122px;
+    }
+
+    .headline1 {
+        font-size: 20px;
+    }
+
+    .subText {
+        font-size: 16px;
+    }
+
+    .swiper {
+        width: 300px;
+        height: 320px;
+    }
+
+    .offerImage {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    #home {
+        padding-bottom: 5vh;
+    }
+
+    #about {
+        padding: 30px 0;
+    }
+
+    .gsbtn {
+        margin-top: 100px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .subname {
+        font-size: 20px;
+    }
+
+    .menubar img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .pik1, .pik2, .pik3 {
+        height: 200px;
+    }
+
+    .pikContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .pikCon {
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr;
+    }
+
+    .iconContainer {
+        padding: 10px 0px;
+    }
+
+    .recipeContainer {
+        grid-template-columns: 1fr;
+        /* after */
+        grid-template-rows: 1fr;
+    }
+
+    /* three hights change togerther */
+    .splide {
+        height: 410px;
+    }
+
+    .splide__slide {
+        height: 310px;
+    }
+
+    .recipePik, .recipeDescription {
+        height: 310px;
+    }
+
+    .recipePik {
+        position: relative;
+    }
+
+    .recipeDescription {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    }
+
+    .recDesHeadline {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        color: white;
+        border-color: white;
+        text-align: center;
+    }
+
+    .recDesText {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+
+    .ingrediants {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ingrediants li {
+        color: white;
+    }
+
+    .contactHeadline{
+        font-size: 16px;
+    }
+
+    .contactTxt{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .name {
+        font-size: 35px;
+        margin-top: 70px;
+    }
+
+    .gsbtn {
+        width: 90%;
+        border-radius: 5px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .iconDescription {
+        font-size: 10px;
+    }
+
+    .pik1, .pik2, .pik3 {
+        height: 150px;
+        height: 150px;
+    }
+
+    .recDesHeadline {
+        font-size: 14px;
+    }
+
+    .recDesText {
+        font-size: 12px;
+    }
+
+    .ingrediants li {
+        font-size: 12px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 370px;
+    }
+
+    .offerImage {
+        width: 100%;
+        height: 250px;
+    }
+
+    .massageWrapper {
+        padding: 50px 25px;
+    }
+
+    .mHead {
+        font-size: 20px;
+    }
+
+    .footerTxt {
+        font-size: 17px;
+    }
+
+    .footerTxt1 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .subname {
+        font-size: 17px;
+    }
+
+    .iconDescription {
+        font-size: 8px;
+    }
+
+    .headline1 {
+        font-size: 15px;
+    }
+
+    .subText {
+        font-size: 13px;
+        width: 95%;
+    }
+
+    .splide {
+        height: 370px;
+        padding: 50px 40px;
+    }
+
+    .splide__slide {
+        height: 270px;
+    }
+
+    .recipePik, .recipeDescription {
+        height: 270px;
+    }
+
+    .txt {
+        margin-left: 1px;
+    }
+
+    .img img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .cHead {
+        font-size: 16px;
+    }
+
+    .send {
+        letter-spacing: normal;
+    }
+
+    input {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width:260px) {
+    .name {
+        font-size: 30px;
+        margin-top: 80px;
+    }
+
+    .subname {
+        font-size: 15px;
+    }
+
+    .splide {
+        height: 350px;
+    }
+
+    .splide__slide {
+        height: 250px;
+    }
+
+    .recipePik, .recipeDescription {
+        height: 250px;
+    }
+}

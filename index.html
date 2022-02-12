@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Hut</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.png">
+    <!-- font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Didact+Gothic&family=Josefin+Sans:wght@200;300;400;700&family=Lato:wght@300;400;700&family=Poppins:wght@200;300;400&family=Roboto:wght@100;300;400;700;900&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- splide js link -->
+    <link rel="stylesheet" href="css/splide.min.css">
+    <!-- swiper js link -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- main css style link -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/43bdb0fd4f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="home">
+        <!-- navigation bar -->
+        <div class="navContainer">
+            <nav class="navbar">
+                <div class="logoContainer">
+                    <span class="logo">
+                        <i class="fas fa-hamburger"></i>
+                    </span>
+                </div>
+                <div class="menuContainer">
+                    <ul class="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#recipe">Recipe</a></li>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="#offer">Offer</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- icon navbar -->
+                <div class="menubarContainer">
+                    <span class="menubar">
+                        <img src="image/bar.png" alt="none" onclick="showLink()">
+                    </span>
+                </div>
+                <!-- hidden link -->
+                <div class="linkContainer" id="id">
+                    <p class="link"><a href="#home" onclick="hideLink()">Home</a></p>
+                    <p class="link"><a href="#about" onclick="hideLink()">About</a></p>
+                    <p class="link"><a href="#recipe" onclick="hideLink()">Recipe</a></p>
+                    <p class="link"><a href="#order" onclick="hideLink()">Order</a></p>
+                    <p class="link"><a href="#offer" onclick="hideLink()">Offer</a></p>
+                    <p class="link"><a href="#contact" onclick="hideLink()">Contact</a></p>
+                    <span class="cross" onclick="hideLink()">&times;</span>
+                </div>
+            </nav>
+        </div>
+        <!-- homepage intro -->
+        <p class="name">The Royal Hut</p>
+        <p class="subname">Committed to server with the best quality of food</p>
+        <p class="subname">A sign of quality and aristocracy</p>
+        <p class="gsbtn">get started</p>
+    </div>
+
+
+    <!-- ===================about page============================== -->
+    <div id="about">
+        <p class="headline">
+            Lorem ipsum dolor sit
+        </p>
+        <p class="descripton">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt placeat tempora, veritatis voluptatem
+            laboriosam quae dolor asperiores laudantium iste facere qui aut eius. Doloribus, nihil! Impedit veritatis
+            modi eaque ipsa.
+        </p>
+        <br>
+        <p class="descripton">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ab nulla ipsa? Ipsam eius eos minus aut
+            repellat, sint optio.
+        </p>
+        <div class="pikContainer">
+            <div class="pikCon">
+                <div class="pik1" data-aos="zoom-in-down" data-aos-duration="1500">
+                    <img src="image/resturantpik1.jpg" alt="no image">
+                </div>
+                <div class="pik2" data-aos="zoom-in-up" data-aos-duration="1500">
+                    <img src="image/resturantpik2.jpg" alt="no image">
+                </div>
+            </div>
+            <div class="pik3" data-aos="zoom-in-down" data-aos-duration="1500">
+                <img src="image/resturantpik3.jpg" alt="no image">
+            </div>
+        </div>
+        <div class="iconContainer" data-aos="fade-up" data-aos-duration="1500">
+            <div class="part">
+                <img src="image/ac.png" alt="no image">
+                <p class="iconDescription">AC Room</p>
+            </div>
+            <div class="part">
+                <img src="image/wifi.png" alt="no image">
+                <p class="iconDescription">Free Wifi</p>
+            </div>
+            <div class="part">
+                <img src="image/ss.png" alt="no image">
+                <p class="iconDescription">Extra Space</p>
+            </div>
+            <div class="part">
+                <img src="image/tv.png" alt="no image">
+                <p class="iconDescription">TV Casting</p>
+            </div>
+        </div>
+        <p class="lastDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, minus quod nulla itaque unde doloribus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates aut dolore exercitationem. Aspernatur,
+            sapiente saepe!
+        </p>
+    </div>
+    <!-- =================recipe========================== -->
+    <div id="recipe">
+        <p class="headline1">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+        </p>
+        <p class="subText">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste officia temporibus porro, eligendi similique
+            accusamus mollitia modi asperiores enim impedit?
+        </p>
+        <!-- slider -->
+        <div class="splide" data-aos="fade-up" data-aos-duration="1500">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <!-- item 01 -->
+                    <li class="splide__slide">
+                        <div class="recipeContainer">
+                            <!-- recipe pik -->
+                            <div class="recipePik">
+                                <img src="image/Buffalo-Style Chicken Wings.jpeg" alt="no image" class="rp">
+                            </div>
+                            <!-- recipe description -->
+                            <div class="recipeDescription">
+                                <p class="recDesHeadline">Buffalo-Style Chicken</p>
+                                <p class="recDesText">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo excepturi
+                                    nostrum nam qui numquam laboriosam iste repellendus magni Deleniti.
+                                <ul class="ingrediants">
+                                    <div class="listCon">
+                                        <li>Lorem</li>
+                                        <li>Ispum</li>
+                                        <li>Dolor</li>
+                                    </div>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- item 02 -->
+                    <li class="splide__slide">
+                        <div class="recipeContainer">
+                            <!-- recipe pik -->
+                            <div class="recipePik">
+                                <img src="image/Chicken Fettuccine Alfredo.jpeg" alt="no image" class="rp">
+                            </div>
+                            <!-- recipe description -->
+                            <div class="recipeDescription">
+                                <p class="recDesHeadline">Chicken Fettuccine Alfredo</p>
+                                <p class="recDesText">
+                                    Voluptatibus unde eveniet molestiae harum, eum ullam minus totam quia id similique
+                                    ea nihil! Doloribus assumenda harum inventore soluta ipsam.
+                                <ul class="ingrediants">
+                                    <div class="listCon">
+                                        <li>Voluptate</li>
+                                        <li>Unde</li>
+                                        <li>Evebiet</li>
+                                    </div>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- item 03 -->
+                    <li class="splide__slide">
+                        <div class="recipeContainer">
+                            <!-- recipe pik -->
+                            <div class="recipePik">
+                                <img src="image/Chicken Parmesan Stuffed Shells.jpeg" alt="no image" class="rp">
+                            </div>
+                            <!-- recipe description -->
+                            <div class="recipeDescription">
+                                <p class="recDesHeadline">Chicken Parmesan Stuffed</p>
+                                <p class="recDesText">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo excepturi
+                                    nostrum nam qui numquam laboriosam iste repellendus magni Deleniti.
+                                <ul class="ingrediants">
+                                    <div class="listCon">
+                                        <li>Lorem</li>
+                                        <li>Ispum</li>
+                                        <li>Dolor</li>
+                                    </div>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- item 04 -->
+                    <li class="splide__slide">
+                        <div class="recipeContainer">
+                            <!-- recipe pik -->
+                            <div class="recipePik">
+                                <img src="image/Garlic Cheese Bread Sticks.jpeg" alt="no image" class="rp">
+                            </div>
+                            <!-- recipe description -->
+                            <div class="recipeDescription">
+                                <p class="recDesHeadline">Garlic Cheese Bread</p>
+                                <p class="recDesText">
+                                    Voluptatibus unde eveniet molestiae harum, eum ullam minus totam quia id similique
+                                    ea nihil! Doloribus assumenda harum inventore soluta ipsam.
+                                <ul class="ingrediants">
+                                    <div class="listCon">
+                                        <li>Voluptate</li>
+                                        <li>Unde</li>
+                                        <li>Evebiet</li>
+                                    </div>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- item 05 -->
+                    <li class="splide__slide">
+                        <div class="recipeContainer">
+                            <!-- recipe pik -->
+                            <div class="recipePik">
+                                <img src="image/Penne alla Vodka.jpeg" alt="no image" class="rp">
+                            </div>
+                            <!-- recipe description -->
+                            <div class="recipeDescription">
+                                <p class="recDesHeadline">Penne Alla Vodka</p>
+                                <p class="recDesText">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo excepturi
+                                    nostrum nam qui numquam laboriosam iste repellendus magni Deleniti.
+                                <ul class="ingrediants">
+                                    <div class="listCon">
+                                        <li>Lorem</li>
+                                        <li>Ispum</li>
+                                        <li>Dolor</li>
+                                    </div>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- item 06 -->
+                    <li class="splide__slide">
+                        <div class="recipeContainer">
+                            <!-- recipe pik -->
+                            <div class="recipePik">
+                                <img src="image/Southern Fried Chicken Parmesan.jpeg" alt="no image" class="rp">
+                            </div>
+                            <!-- recipe description -->
+                            <div class="recipeDescription">
+                                <p class="recDesHeadline">Fried Chicken Parmesan</p>
+                                <p class="recDesText">
+                                    Voluptatibus unde eveniet molestiae harum, eum ullam minus totam quia id similique
+                                    ea nihil! Doloribus assumenda harum inventore soluta ipsam.
+                                <ul class="ingrediants">
+                                    <div class="listCon">
+                                        <li>Voluptate</li>
+                                        <li>Unde</li>
+                                        <li>Eveniet</li>
+                                    </div>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="highlighter"></div>
+        </div>
+        <div class="extra"></div>
+    </div>
+    <!-- ====================order==================== -->
+    <div id="order">
+        <p class="headline2">Want to have our food at home?</p>
+        <p class="subHeadline">Order and get your favourite early</p>
+        <p class="orderTxt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet rem earum delectus sed sapiente
+            minima, totam numquam? Temporibus, quia.
+        </p>
+        <p class="orderBtn">Order Now</p>
+    </div>
+    <!-- ==================special offer====================== -->
+    <div id="offer">
+        <p class="spOfferTxt">Special Offer</p>
+        <div id="swiper-wrapper" data-aos="fade-up" data-aos-duration="1500">
+            <!-- product 01-->
+            <div id="box">
+                <!-- image part -->
+                <div class="product">
+                    <div class="commision">
+                        <img src="image/spOffer.png" alt="no image">
+                    </div>
+                    <img src="image/ice-cream.png" alt="no image" class="offerImage">
+                </div>
+                <!-- description part -->
+                <div class="productDescription">
+                    <p class="foodName">Ice-cream</p>
+                    <p class="orderBtn1">Order Now</p>
+                </div>
+            </div>
+            <!-- product 2 -->
+            <div id="box">
+                <!-- image part -->
+                <div class="product">
+                    <div class="commision">
+                        <img src="image/spOffer.png" alt="no image">
+                    </div>
+                    <img src="image/beef-burger.png" alt="no image" class="offerImage">
+                </div>
+                <!-- description part -->
+                <div class="productDescription">
+                    <p class="foodName">Beef-Burger</p>
+                    <p class="orderBtn1">Order Now</p>
+                </div>
+            </div>
+            <!-- product 03-->
+            <div id="box">
+                <!-- image part -->
+                <div class="product">
+                    <div class="commision">
+                        <img src="image/spOffer.png" alt="no image">
+                    </div>
+                    <img src="image/Juice_Strawberry_Orange_fruit_Lime.png" alt="no image" class="offerImage">
+                </div>
+                <!-- description part -->
+                <div class="productDescription">
+                    <p class="foodName">Fruit lime</p>
+                    <p class="orderBtn1">Order Now</p>
+                </div>
+            </div>
+        </div>
+        <!-- after 700 pixel width -->
+        <div class="con">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- product 1 -->
+                    <div class="swiper-slide">
+                        <div id="box">
+                            <!-- image part -->
+                            <div class="product">
+                                <div class="commision">
+                                    <img src="image/spOffer.png" alt="no image">
+                                </div>
+                                <img src="image/ice-cream.png" alt="no image" class="offerImage">
+                            </div>
+                            <!-- description part -->
+                            <div class="productDescription">
+                                <p class="foodName">Ice-cream</p>
+                                <p class="orderBtn1">Order Now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product 2 -->
+                    <div class="swiper-slide">
+                        <div id="box">
+                            <!-- image part -->
+                            <div class="product">
+                                <div class="commision">
+                                    <img src="image/spOffer.png" alt="no image">
+                                </div>
+                                <img src="image/beef-burger.png" alt="no image" class="offerImage">
+                            </div>
+                            <!-- description part -->
+                            <div class="productDescription">
+                                <p class="foodName">Beef-Burger</p>
+                                <p class="orderBtn1">Order Now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product 3 -->
+                    <div class="swiper-slide">
+                        <div id="box">
+                            <!-- image part -->
+                            <div class="product">
+                                <div class="commision">
+                                    <img src="image/spOffer.png" alt="no image">
+                                </div>
+                                <img src="image/Juice_Strawberry_Orange_fruit_Lime.png" alt="no image"
+                                    class="offerImage">
+                            </div>
+                            <!-- description part -->
+                            <div class="productDescription">
+                                <p class="foodName">Fruit lime</p>
+                                <p class="orderBtn1">Order Now</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- =============contact page=============== -->
+    <div id="contact">
+        <p class="contactHeadline">Contact Us</p>
+        <p class="contactTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, sunt.</p>
+        <p class="contactTxt">Lorem ipsum dolor sit amet.</p>
+        <div class="contactBoxWrapper" data-aos="fade-up" data-aos-duration="1500">
+            <!-- details -->
+            <div class="details">
+                <div class="detailsWrapper">
+                    <!-- address -->
+                    <div class="address">
+                        <div class="img">
+                            <img src="image/address.png" alt="no image">
+                        </div>
+                        <div class="txt">
+                            <p class="cHead">Address</p>
+                            <p class="cTxt">
+                                Navy Hospital Gate,<br>
+                                EPZ, Chattogram.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- phone -->
+                    <div class="phone">
+                        <div class="img">
+                            <img src="image/phone.png" alt="no image">
+                        </div>
+                        <div class="txt">
+                            <p class="cHead">Phone</p>
+                            <p class="cTxt">088-435-769</p>
+                        </div>
+                    </div>
+                    <!-- email -->
+                    <div class="email">
+                        <div class="img">
+                            <img src="image/email.png" alt="no image">
+                        </div>
+                        <div class="txt">
+                            <p class="cHead">Email</p>
+                            <p class="cTxt">mehedihasan712277@gamil.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- massage -->
+            <div class="massage">
+                <div class="massageWrapper">
+                    <p class="mHead">Send Massage</p>
+                    <input type="text" class="imput" placeholder="Full-name">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="text" class="input" placeholder="Massage">
+                    <p class="send">Send</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="ficonCon">
+            <div class="ficon">
+                <i class="fa-brands fa-twitter-square fa-2x"></i>
+                <i class="fa-brands fa-whatsapp-square fa-2x"></i>
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <i class="fa-brands fa-facebook-square fa-2x"></i>
+                <i class="fa-brands fa-instagram-square fa-2x"></i>
+            </div>
+        </div>
+        <p class="footerTxt">Get in touch</p>
+        <hr>
+        <p class="footerTxt1">
+            Terms & Condition | Blog | Privacy & Policy
+        </p>
+        <p class="footerTxt1">
+            <i class="fa-solid fa-copyright"></i> All rights are reserved
+        </p>
+    </div>
+    <!-- script file -->
+    <!-- <script src="https://kit.fontawesome.com/ba8a0417e8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/43bdb0fd4f.js" crossorigin="anonymous"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/anim.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'fade',
+            rewind: true,
+        });
+        splide.mount();
+
+        var swiper = new Swiper(".swiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
